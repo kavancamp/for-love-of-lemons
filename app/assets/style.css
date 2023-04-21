@@ -1,0 +1,14 @@
+body {
+  background-image: url("./images/Lemon.png");
+  background-repeat: repeat-x;
+  opacity: 0.75;
+}
+h1 {
+  text-align: center;
+  padding-top: 15px;
+  transform: rotate(11deg);
+}
+
+footer {
+  text-align: center;
+}
