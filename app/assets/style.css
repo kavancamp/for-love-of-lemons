@@ -1,53 +1,82 @@
+@media only screen and (max-width: 375px) {
+  h1 {
+    padding: 0 100px 0 0;
+  }
+  .recipe-card-container {
+    padding-top: 0px !important;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .recipe-card-container {
+    padding-top: 50px !important;
+  }
+}
 body {
   background-image: url("./images/Lemon.png");
   background-repeat: repeat-x;
+  background-size: 50%;
   opacity: 0.75;
+  width: fit-content;
+  cursor: pointer;
+}
+span {
+  display: flex;
+  justify-content: center;
 }
 h1 {
   text-align: center;
   padding-top: 25px;
+  padding-left: 200px;
   transform: rotate(15deg);
-  margin-left: 60px;
-}
-nav {
-  padding-top: 300px;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 40px;
+  font-size: 50px;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
+  line-height: 10px;
   color: #885df1;
 }
-.mail,
-.insta {
-  padding-right: 10px;
-}
-
 .recipe-card-container {
+  padding-top: 400px;
+  padding-right: 20px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
 }
 .recipe-card {
-  padding-right: 20px;
-  border: 2px solid black;
   border-radius: 20px;
-  box-shadow: inset;
-  height: 300px;
-  width: 200px;
+  box-shadow: 10px 5px 5px gray;
+  overflow: contain;
+  padding: 30px 30px;
+  justify-content: center;
   /*flex-basis: 33.33333;*/
+}
+.recipe-photo {
+  height: 400px;
+  width: 350px;
+  opacity: none;
 }
 .recipeBtn {
   justify-content: center;
-  border-radius: 10px;
-  background-color: rgb(245, 186, 77);
+  background-color: rgb(246, 195, 100);
   color: white;
   height: 50px;
-  width: 110px;
+  width: 210px;
+  outline: 1px solid gray;
+}
+.recipeBtn:hover,
+recipeBtn:active,
+recipeBtn:focus,
+recipeBtn:target {
+  background-color: lightyellow;
+  color: black;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 footer {
   padding-top: 30px;
   text-align: center;
+  background-image: linear-gradient(rgb(250, 230, 230), yellow);
 }
